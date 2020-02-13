@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	max-width:100%;
 }
 ol, ul {
 	list-style: none;
@@ -71,6 +72,7 @@ nav{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	margin: 3px 6%;
 	
 }
 nav div{
@@ -78,38 +80,38 @@ nav div{
 	justify-content: space-evenly;
 }
 nav div a{
-	padding: 20px;
+	text-align:center;
+	padding: 40px 30px;
 	text-decoration: none;
 	color:grey;
 }
 nav div a:hover{
-	background-color: black;
-		color: white;
-/* 	animation-name: Navi;
-	animation-duration: 3s;*/
+	
+	animation-name: Navi;
+	animation-duration: 3s;
 }
 
-/* @keyframes Navi{
+@keyframes Navi{
 	from{	}
 	to{
-		
+		background-color: black;
+		color: white;
 	}
 }
- */
-nav{
-	display: flex;
-	text-align: center;
-}
+
 header{
 	display: flex;
-	padding: 0px 10%;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 2px 8%;
 }
+
 .TopTitle{
 	display: flex;
-	padding: 15%;
+	flex-direction: column;
+	justify-content: space-around;
 	text-align: center;
-	font-family: 'bangers';
-	font-size: 50px;
+	font-size: 80px;
 	
 }
 .TopTitle a{
@@ -118,7 +120,7 @@ header{
 	text-decoration: none;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:20px;
-	padding: 1px 40px;
+	padding: 5px 5px;
 }
 .TopTitle a:hover{
 	animation-name: GetStart;
@@ -136,11 +138,20 @@ header{
 
 .TopImg{
 	display: flex;
-	padding: 30px 0px;
+	padding: 10px 0px;
+}
+
+section div{
+	display: flex;
+	flex-direction: column;
+	margin: 15px 0px;
 }
 
 .TopSect{
 	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 1px 6%;
 	border-top: solid 1px black;
 }
 .TopSect div{
@@ -157,9 +168,15 @@ footer{
 }
 .middle-img{
 	display: flex;
+	justify-content: center;
+	align-self: center;
+	margin: 0 auto;
 }
 .BottomSect{
 	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 1px 6%;
 	border-bottom: solid 1px black;
 }
 .BottomSect div{
@@ -168,6 +185,71 @@ footer{
 	width: 33%;
 }
 address{
+	display: flex;
+	flex-direction: column;
+	margin:0 6%;
 	padding-top: 20px;
 }
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*Start of individual code for Services.html*/
+.services-header-img{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	margin: 0 auto;
+}
+.ServSect{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 2% 6%;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+}
+.ServSect div{
+	display: flex;
+	flex-direction: column;
+	border: solid 1px black;
+	margin: 2%;
+	width:46%;
+	padding: 3%;
+	background-color: #e6e6e6;
+}
+.ServSect div button{
+	margin: 10px 2px;
+	background-color: white;
+	
+	width: 35%;
+	padding: 10px;
+	border: solid 1px black;
+	color: black;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ServSect div a:hover{
+	animation-name: GetStart;
+	animation-duration: 1s;
+}
+@keyframes GetStart{
+	from{
+		border: solid 1px black;
+	}
+	to{
+		border: solid 5px blue;
+		
+	}
+}
+.SomeFacts{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 8%;
+}
+.SomeFacts div{
+	padding-right: 5%;
+}
+.SomeFacts ul{
+	padding:5%;
+
+}
