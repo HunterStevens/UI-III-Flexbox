@@ -49,12 +49,13 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,4 +64,110 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/* Your code starts here! */
+
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+}
+nav div{
+	display: flex;
+	justify-content: space-evenly;
+}
+nav div a{
+	padding: 20px;
+	text-decoration: none;
+	color:grey;
+}
+nav div a:hover{
+	background-color: black;
+		color: white;
+/* 	animation-name: Navi;
+	animation-duration: 3s;*/
+}
+
+/* @keyframes Navi{
+	from{	}
+	to{
+		
+	}
+}
+ */
+nav{
+	display: flex;
+	text-align: center;
+}
+header{
+	display: flex;
+	padding: 0px 10%;
+}
+.TopTitle{
+	display: flex;
+	padding: 15%;
+	text-align: center;
+	font-family: 'bangers';
+	font-size: 50px;
+	
+}
+.TopTitle a{
+	border: solid 1px black;
+	color: black;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:20px;
+	padding: 1px 40px;
+}
+.TopTitle a:hover{
+	animation-name: GetStart;
+	animation-duration: 1s;
+}
+@keyframes GetStart{
+	from{
+		border: solid 1px black;
+	}
+	to{
+		border: solid 5px blue;
+		
+	}
+}
+
+.TopImg{
+	display: flex;
+	padding: 30px 0px;
+}
+
+.TopSect{
+	display: flex;
+	border-top: solid 1px black;
+}
+.TopSect div{
+	display: flex;
+	padding: 10px 3%;
+	width: 49%;
+}
+
+footer{
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	text-align: center;
+}
+.middle-img{
+	display: flex;
+}
+.BottomSect{
+	display: flex;
+	border-bottom: solid 1px black;
+}
+.BottomSect div{
+	display: flex;
+	padding: 10px 1%;
+	width: 33%;
+}
+address{
+	padding-top: 20px;
+}
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
